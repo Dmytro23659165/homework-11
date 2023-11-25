@@ -1,0 +1,117 @@
+.section__content, .section, .main .section__content, .main .section, .header .navigation__list {
+  display: flex;
+  justify-content: center;
+}
+
+.section__description, .section__title, .section__category, .main .section__description, .main .section__title, .main .section__category, .header .navigation__link {
+  text-decoration: none;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header .navigation__list {
+  gap: 100px;
+  margin-right: 40px;
+}
+.header .navigation__item {
+  list-style: none;
+}
+.header .navigation__link:hover {
+  color: #03A9F4;
+}
+
+.main .section {
+  gap: 60px;
+}
+.main .section__content {
+  flex-direction: column;
+}
+.main .section__image {
+  width: 420px;
+  height: 280px;
+  font-size: 20px;
+}
+.main .section__category {
+  color: #B4AD9E;
+  font-family: Ubuntu;
+}
+.main .section__title {
+  color: #626262;
+  font-family: Ubuntu;
+  width: 200px;
+  height: 200px;
+  font-size: 30px;
+}
+.main .section__description {
+  color: #626262;
+  font-family: Ubuntu;
+  width: 420px;
+  height: 280px;
+  font-size: 30px;
+}
+
+.section {
+  gap: 60px;
+}
+.section__content {
+  flex-direction: column;
+}
+.section__image {
+  width: 420px;
+  height: 280px;
+  font-size: 30px;
+}
+.section__category {
+  color: #B4AD9E;
+  font-family: Ubuntu;
+}
+.section__title {
+  color: #626262;
+  font-family: Ubuntu;
+  width: 420px;
+  height: 280px;
+  font-size: 30px;
+}
+.section__description {
+  color: #626262;
+  font-family: Ubuntu;
+  width: 420px;
+  height: 280px;
+  font-size: 30px;
+}
+
+.section {
+  gap: 60px;
+}
+.section__content {
+  flex-direction: column;
+}
+.section__image {
+  width: 420px;
+  height: 280px;
+  font-size: 30px;
+}
+.section__category {
+  color: #B4AD9E;
+  font-family: Ubuntu;
+}
+.section__title {
+  color: #626262;
+  font-family: Ubuntu;
+  width: 420px;
+  height: 280px;
+  font-size: 30px;
+}
+.section__description {
+  color: #626262;
+  font-family: Ubuntu;
+  width: 420px;
+  height: 280px;
+  font-size: 30px;
+}/*# sourceMappingURL=style.css.map */

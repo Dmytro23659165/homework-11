@@ -1,0 +1,130 @@
+$main-texts-color: #626262;
+$secondary-text-color: #B4AD9E;
+$accent-color: #03A9F4;
+$navigations-links-color: #7D7D7D;
+
+%flex{
+    display: flex;
+    justify-content: center;
+}
+%decoration{
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal; 
+}
+@mixin colors($color, $family){
+    color: $color;
+    font-family: $family;
+}
+@mixin size($width, $height, $font){
+    width: $width;
+    height: $height;
+    font-size: $font;
+}
+
+
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+       .navigation{
+        &__list{
+            @extend %flex;
+            gap: 100px;
+            margin-right: 40px;
+        }
+
+        &__item{
+            list-style: none;
+        }
+
+        &__link{
+            @extend %decoration;
+        }
+
+        &__link:hover{
+            color: #03A9F4;
+        }
+       } 
+}
+.main{
+    .section{
+        @extend %flex;
+        gap: 60px;
+        &__content{
+            @extend %flex;
+            flex-direction: column;
+        }
+        &__image{
+            @include size($width: 420px, $height: 280px, $font: 20px);
+        }
+        &__category{
+            @extend %decoration;
+            @include colors($color: #B4AD9E, $family: Ubuntu);
+        }
+        &__title{
+            @extend %decoration;
+            @include colors($color:#626262, $family: Ubuntu);
+            @include size($font:30px, $height: 200px, $width: 200px);
+        }
+        &__description{
+            @extend %decoration;
+            @include colors($color:#626262, $family: Ubuntu);
+            @include size($width:420px, $height: 280px, $font: 30px);
+        }
+    }
+}
+.section{
+    @extend %flex;
+    gap: 60px;
+    &__content{
+        @extend %flex;
+        flex-direction: column;
+    }
+    &__image{
+        @include size($width:420px, $height:280px, $font: 30px);
+    }
+    &__category{
+        @extend %decoration;
+        @include colors($color:#B4AD9E, $family:Ubuntu);
+    }
+    &__title{
+        @extend %decoration;
+        @include colors($color:#626262, $family: Ubuntu);
+        @include size($font:30px, $width: 420px, $height: 280px);
+    }
+    &__description{
+        @extend %decoration;
+        @include colors($color:#626262, $family: Ubuntu);
+        @include size($width:420px, $font: 30px, $height: 280px);
+    }
+}
+.section{
+    @extend %flex;
+    gap: 60px;
+    &__content{
+        @extend %flex;
+        flex-direction: column;
+    }
+    &__image{
+        @include size($width:420px, $height:280px, $font:30px);
+    }
+    &__category{
+        @extend %decoration;
+        @include colors($color:#B4AD9E, $family:Ubuntu);
+    }
+    &__title{
+        @extend %decoration;
+        @include colors($color:#626262, $family:Ubuntu);
+        @include size($font:30px, $height:280px, $width:420px);
+    }
+    &__description{
+        @extend %decoration;
+        @include colors($color:#626262, $family:Ubuntu);
+        @include size($font:30px, $height:280px, $width:420px);
+    }
+}
