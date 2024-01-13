@@ -1,130 +1,426 @@
-$main-texts-color: #626262;
-$secondary-text-color: #B4AD9E;
-$accent-color: #03A9F4;
-$navigations-links-color: #7D7D7D;
+// head
 
-%flex{
+.head__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 291px;
+}
+
+.head-content__box{
+
+}
+.head-content__nazva{
+    color: #FED136;
+    text-align: center;
+    font-family: Bilbo Swash Caps;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 41px; /* 113.889% */
+    letter-spacing: 1.3px;
+}
+
+.head-content__a-box{
+    display: flex;
+    gap: 10px;
+} 
+.nav_menu{
+    
+}  
+.head-content__prisudok{
+    color: #FED136;
+    text-decoration: none;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 41px; /* 292.857% */
+    text-transform: uppercase;
+}
+ul{
+    display: flex;
+    gap: 10px;
+}
+ul, li{
+    list-style: none;
+}
+#toggle, 
+.toggle{
+    display: none;
+}
+
+// head-end
+// title
+
+.title__box{
     display: flex;
     justify-content: center;
 }
-%decoration{
-    text-decoration: none;
+.title__box-link{
+    padding-top: 91.5px;
+    padding-bottom: 87.5px;
+}
+.title__link{
+    color: #222;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 75px; /* 187.5% */
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+// title-end
+// over
+
+.over-content__box{
+    display: flex;
+    justify-content: center;
+    gap: 260px;
+    padding-bottom: 119px;
+}
+
+.over-content__link-box{
+    border: 3px solid rgba(254, 209, 54, 1);
+    border-radius: 100%;
+    padding: 7px;
+}
+.over-content__box-text-link{
+    overflow: hidden;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.over-content__link-boxer{
+    border: 3px solid rgba(254, 209, 54, 1);
+    border-radius: 100%;
+    padding: 7px 13px;
+}
+.over-content__box-text{
+
+}
+.over-content__text-link{
+    color: #222;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.45px;
+}
+.over-content__text-row{
+    color: #777;
+    width: 304px;
+    text-align: center;
+    font-family: RobotoSlab;
     font-size: 14px;
     font-style: normal;
-    line-height: normal; 
-}
-@mixin colors($color, $family){
-    color: $color;
-    font-family: $family;
-}
-@mixin size($width, $height, $font){
-    width: $width;
-    height: $height;
-    font-size: $font;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.35px;
 }
 
+// over-end
+// finish
 
-
-.container{
-    width: 1200px;
-    margin: 0 auto;
+.finish{
+    background-color: rgba(34, 34, 34, 1);
+    margin : -8px;
 }
 
-.header{
-       .navigation{
-        &__list{
-            @extend %flex;
-            gap: 100px;
-            margin-right: 40px;
-        }
+.finish-content__box{
 
-        &__item{
-            list-style: none;
-        }
-
-        &__link{
-            @extend %decoration;
-        }
-
-        &__link:hover{
-            color: #03A9F4;
-        }
-       } 
 }
-.main{
-    .section{
-        @extend %flex;
+.finish-content__link-box{
+    display: flex;
+    justify-content: center;
+    padding-top: 92px;
+    padding-bottom: 114px;
+}
+.finish-content__text-nazva{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+
+.finish-conrtent__input-box{
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+.finish-input__box{
+    display: flex;
+    flex-direction: column;
+    column-gap: 28px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 12px 310px 21px 20px;
+    color: #BBB;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.35px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: rgba(34, 34, 34, 1);
+}
+
+.finish-area__form{
+
+}
+textarea{
+    padding: 14px 250px 9px 22px;
+    color: #BBB;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.35px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: rgba(34, 34, 34, 1);
+}
+
+.finish-content__button-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 27px;
+    padding-bottom: 115px;
+}
+.finish-content__button{
+    padding: 18px 33px 28px;
+    border: rgba(254, 209, 54, 1);
+    background-color: rgba(254, 209, 54, 1);
+    border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+// finish-end
+// media-1
+
+// @media screen and (min-width: 576px){
+//     .conteiner{
+//         width: 430px;
+//     }
+
+//     .head__box{
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 1px;
+//     }
+
+
+
+//     .title__box{
+
+//     }
+//     .title__box-link{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+//     .title__link{
+//         font-size: 20px;
+//     }
+
+
+
+//     .over-content__box{
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         gap: 1px;
+//     }
+//     .over-content__box-text-link{
+
+//     }
+//     .over-content__link-boxer{
+
+//     }
+
+
+
+//     .finish-content__box{
+
+//     }
+//     .finish-content__link-box{
+
+//     }
+//     .finish-content__text-nazva{
+//         font-size: 20px;
+//     }
+
+//     .finish-conrtent__input-box{
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//     }
+//     .finish-input__box{
+
+//     }
+//     .finish-area__form{
+
+//     }
+
+//     .finish-content__button-box{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+//     .finish-content__button{
+//         padding: 10px 22px 18px;
+//     }
+// }
+
+// media-1-end
+// media-2
+
+@media screen and (max-width: 768px){
+    .conteiner{
+        width: 588px;
+    }
+    
+    .head__box{
+        display: flex;
+        justify-content: center;
         gap: 60px;
-        &__content{
-            @extend %flex;
-            flex-direction: column;
-        }
-        &__image{
-            @include size($width: 420px, $height: 280px, $font: 20px);
-        }
-        &__category{
-            @extend %decoration;
-            @include colors($color: #B4AD9E, $family: Ubuntu);
-        }
-        &__title{
-            @extend %decoration;
-            @include colors($color:#626262, $family: Ubuntu);
-            @include size($font:30px, $height: 200px, $width: 200px);
-        }
-        &__description{
-            @extend %decoration;
-            @include colors($color:#626262, $family: Ubuntu);
-            @include size($width:420px, $height: 280px, $font: 30px);
-        }
     }
-}
-.section{
-    @extend %flex;
-    gap: 60px;
-    &__content{
-        @extend %flex;
+    ul{
+        display: none;
+    }
+    ul, li{ 
+        list-style: none;
+    }
+    .toggle{
+        display: block;
+    }
+    
+    label span {
+        top: 15px;
+      }
+      label span,
+      label span::before,
+      label span::after {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: #333;
+        position: absolute;
+        right: 0;
+        transition: .3s;
+      }
+      label span::before {
+        top: -8px;
+      }
+      label span::after {
+        top: 8px;
+      }
+
+
+
+
+    .title__box{
+
+    }
+    .title__box-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title__link{
+        font-size: 30px;
+    }
+
+
+
+    .over-content__box{
+        display: flex;
         flex-direction: column;
+        column-gap: 20px;
     }
-    &__image{
-        @include size($width:420px, $height:280px, $font: 30px);
+    .over-content__box-text-link{
+
     }
-    &__category{
-        @extend %decoration;
-        @include colors($color:#B4AD9E, $family:Ubuntu);
+    .over-content__link-boxer{
+        padding: 10px 16px;
+    }   
+    .over-content__text-link{
+        font-size: 18px;
     }
-    &__title{
-        @extend %decoration;
-        @include colors($color:#626262, $family: Ubuntu);
-        @include size($font:30px, $width: 420px, $height: 280px);
+    .over-content__text-row{
+        font-size: 16px;
     }
-    &__description{
-        @extend %decoration;
-        @include colors($color:#626262, $family: Ubuntu);
-        @include size($width:420px, $font: 30px, $height: 280px);
+
+
+
+
+    .finish-content__box{
+
     }
-}
-.section{
-    @extend %flex;
-    gap: 60px;
-    &__content{
-        @extend %flex;
+    .finish-content__link-box{
+
+    }
+    .finish-content__text-nazva{
+        font-size: 30px;
+    }
+
+    .finish-conrtent__input-box{
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    &__image{
-        @include size($width:420px, $height:280px, $font:30px);
+    .finish-input__box{
+
     }
-    &__category{
-        @extend %decoration;
-        @include colors($color:#B4AD9E, $family:Ubuntu);
+    .finish-area__form{
+
     }
-    &__title{
-        @extend %decoration;
-        @include colors($color:#626262, $family:Ubuntu);
-        @include size($font:30px, $height:280px, $width:420px);
+
+    .finish-content__button-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    &__description{
-        @extend %decoration;
-        @include colors($color:#626262, $family:Ubuntu);
-        @include size($font:30px, $height:280px, $width:420px);
+    .finish-content__button{
+        padding: 10px 22px 18px;
     }
 }
+
+// media-2-end
+// media-3
+
+
+
+// media-3-end
